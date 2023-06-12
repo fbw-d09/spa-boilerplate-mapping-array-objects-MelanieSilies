@@ -2,16 +2,16 @@ import React from "react";
 
 const AnimalsInHTML = () => {
   const animals = [
-    { id:1, label: "Horse" },
-    { id:2, label: "Turtle" },
-    { id:3, label: "Elephant" },
-    { id:4, label: "Monkey" },
+    { label: "Horse" },
+    { label: "Turtle" },
+    { label: "Elephant" },
+    { label: "Monkey" },
   ];
 
   return (
     
-    animals.map((singleAnimal) => {
-      return <li className="animal" key={singleAnimal.id}>{singleAnimal.label}</li>
+    animals.map((singleAnimal, i) => {
+      return <li className="animal" key={i}>{singleAnimal.label}</li>
     })
   );
 };
